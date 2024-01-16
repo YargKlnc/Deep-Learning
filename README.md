@@ -11,20 +11,30 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as:
 
 •	EIN and NAME—Identification columns
+
 •	APPLICATION_TYPE—Alphabet Soup application type
+
 •	AFFILIATION—Affiliated sector of industry
+
 •	CLASSIFICATION—Government organization classification
+
 •	USE_CASE—Use case for funding
+
 •	ORGANIZATION—Organization type
+
 •	STATUS—Active status
+
 •	INCOME_AMT—Income classification
+
 •	SPECIAL_CONSIDERATIONS—Special considerations for application
+
 •	ASK_AMT—Funding amount requested
+
 •	IS_SUCCESSFUL—Was the money used effectively
 
 **Instructions**
 
-**Step 1: Preprocess the Data**
+**Step 1: Preprocessing the Data**
 
 1. Starter file was uploaded to Google Colab. Using the information provided in the Challenge files, preprocessing steps were completed.
 
@@ -42,7 +52,7 @@ From Alphabet Soup’s business team, you have received a CSV containing more th
 
 8. Training and testing features datasets were scaled using StandardScaler.
 
-**Step 2: Compile, Train, and Evaluate the Model**
+**Step 2: Compile, Train, and Evaluating the Model**
 
 1. Preprocessing steps were completed in the Google Colab file.
 
@@ -76,7 +86,7 @@ From Alphabet Soup’s business team, you have received a CSV containing more th
 
 5. Results were saved and exported to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
 
-**Step 4: Write a Report on the Neural Network Model**
+**Step 4: Report on the Neural Network Model**
 
 1. **Overview of the analysis:** The purpose of this analysis was to create a deep learning model for Alphabet Soup to predict the success of funded organizations.
 
@@ -93,15 +103,7 @@ From Alphabet Soup’s business team, you have received a CSV containing more th
 
 3. **Summary:** Overall results of the deep learning model were summarized. A recommendation for a different model to solve the classification problem was provided, along with an explanation.
 
-**Step 5: Copy Files Into Your Repository**
-
-1. Colab notebooks were downloaded.
-
-2. Files were moved into the Deep Learning Challenge directory in the local repository.
-
-3. The added files were pushed to GitHub.
-
-   
+  
 **References**
 
 Head photo rights: Shutterstock
