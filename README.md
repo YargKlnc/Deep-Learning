@@ -8,7 +8,7 @@ by YK, UofT
 
 The nonprofit foundation Alphabet Soup wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
 
-From Alphabet Soup’s business team, you have received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as:
+Received a CSV file from Alphabet Soup’s business team, containing more than 34.000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as:
 
 •	EIN and NAME—Identification columns
 
@@ -74,7 +74,7 @@ From Alphabet Soup’s business team, you have received a CSV containing more th
 
 10. Results were saved and exported to an HDF5 file named AlphabetSoupCharity.h5.
 
-**Step 3: Optimize the Model**
+**Step 3: Optimizing the Model**
 
 1. A new Google Colab file named AlphabetSoupCharity_Optimization.ipynb was created.
 
@@ -86,7 +86,7 @@ From Alphabet Soup’s business team, you have received a CSV containing more th
 
 5. Results were saved and exported to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
 
-**Step 4: Report on the Neural Network Model**
+**Step 4: Reporting on the Neural Network Model**
 
 1. **Overview of the analysis:** The purpose of this analysis was to create a deep learning model for Alphabet Soup to predict the success of funded organizations.
 
