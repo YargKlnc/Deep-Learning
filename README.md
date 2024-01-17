@@ -136,7 +136,7 @@ Attempt 2:
 
 Model Performance:
 
-- Steps to Increase Model Performance: Detailed in the report.
+- Steps to Increase Model Performance: Detailed in the summary report.
 
 **Summary:**
 
