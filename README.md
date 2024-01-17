@@ -140,7 +140,7 @@ Model Performance:
 
 **Summary:**
 
-The deep learning model results indicate that further optimization is crucial, as Attempt 1 achieved an accuracy of 72.65%, and Attempt 2 achieved 72.49%, both falling below the minimum acceptable accuracy of 90%. Given the sensitivity of model performance to data quality, exploring enhancements in data preprocessing and feature engineering is recommended. To improve model accuracy, adjustments to the neural network architecture, experimentation with activation functions, and an increase in training epochs are also suggested. These findings underscore the iterative nature of model development, prompting a thorough exploration of alternative models and fine-tuning strategies in future iterations to meet the minimum accuracy threshold and better align with Alphabet Soup's objectives.
+The deep learning model results indicate the necessity for further optimization, as Attempt 1 achieved an accuracy of 72.65%, and Attempt 2 achieved 72.49%, both falling below the minimum acceptable accuracy of 90% or 95% in the context of fundings and financials. Given the sensitivity of model performance to data quality, exploring enhancements in data preprocessing and feature engineering is recommended. To improve model accuracy, adjustments to the neural network architecture, experimentation with activation functions, and an increase in training epochs are also suggested. These findings underscore the iterative nature of model development, prompting a thorough exploration of alternative models and fine-tuning strategies in future iterations to meet the minimum accuracy threshold and better align with Alphabet Soup's objectives.
 
   
 **References**
