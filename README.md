@@ -86,22 +86,61 @@ Received a CSV file from Alphabet Soup’s business team, containing more than 3
 
 5. Results were saved and exported to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
 
+Certainly! Here's the content in plain text:
+
 **Step 4: Reporting on the Neural Network Model**
 
-1. **Overview of the analysis:** The purpose of this analysis was to create a deep learning model for Alphabet Soup to predict the success of funded organizations.
+*Overview:*
 
-2. **Results:**
-   - **Data Preprocessing**
-      - Target variable(s): Identified during preprocessing.
-      - Feature variable(s): Identified during preprocessing.
-      - Variables removed: EIN and NAME columns.
+The objective of this analysis was to develop a deep learning model for Alphabet Soup, predicting the success of funded organizations based on provided features.
 
-   - **Compiling, Training, and Evaluating the Model**
-      - Neurons, layers, and activation functions: Selected based on design considerations.
-      - Target model performance: Achieved/Not Achieved.
-      - Steps to increase model performance: Detailed in the report.
+*Results:*
 
-3. **Summary:** Overall results of the deep learning model were summarized. A recommendation for a different model to solve the classification problem was provided, along with an explanation.
+Data Preprocessing:
+
+- Target Variable(s): Identified during preprocessing.
+- Feature Variable(s): Identified during preprocessing.
+- Variables Removed: EIN and NAME columns.
+
+Model Attempts:
+
+Attempt 1:
+- Cutoff Value Application: 500
+- CutOff Value Classification: 300
+- Layer 1 Hidden Nodes: 10
+- Layer 1 Activation: RELU
+- Layer 2 Hidden Nodes: 5
+- Layer 2 Activation: RELU
+- Output Layer Activation: SIGMOID
+- Compiling: Loss=binary_crossentropy, optimizer=adam, metrics=accuracy
+- Training: 50 epochs
+
+**Results:**
+**Loss: 0.5524, Accuracy: 0.7265**
+
+Attempt 2:
+- Cutoff Value Application: 500
+- CutOff Value Classification: 300
+- Layer 1 Hidden Nodes: 10
+- Layer 1 Activation: RELU
+- Layer 2 Hidden Nodes: 10
+- Layer 2 Activation: RELU
+- Layer 3 Hidden Nodes: 10
+- Layer 3 Activation: TANH
+- Output Layer Activation: SIGMOID
+- Compiling: Loss=binary_crossentropy, optimizer=adam, metrics=accuracy
+- Training: 100 epochs
+
+**Results:**
+**Loss: 0.5516, Accuracy: 0.7249**
+
+Model Performance:
+
+- Steps to Increase Model Performance: Detailed in the report.
+
+**Summary:**
+
+The deep learning model results indicate that further optimization is crucial, as Attempt 1 achieved an accuracy of 72.65%, and Attempt 2 achieved 72.49%, both falling below the minimum acceptable accuracy of 90%. Given the sensitivity of model performance to data quality, exploring enhancements in data preprocessing and feature engineering is recommended. To improve model accuracy, adjustments to the neural network architecture, experimentation with activation functions, and an increase in training epochs are also suggested. These findings underscore the iterative nature of model development, prompting a thorough exploration of alternative models and fine-tuning strategies in future iterations to meet the minimum accuracy threshold and better align with Alphabet Soup's objectives.
 
   
 **References**
