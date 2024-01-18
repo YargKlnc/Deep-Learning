@@ -116,23 +116,23 @@ Attempt 1:
 - Training: 50 epochs
 
 **Results:**
-**Loss: 0.5524, Accuracy: 0.7265**
+**Loss: 0.5524, Accuracy: 0.7278**
 
 Attempt 2:
-- Cutoff Value Application: 500
-- CutOff Value Classification: 300
-- Layer 1 Hidden Nodes: 10
+- Cutoff Value Application: 50
+- CutOff Value Classification: 120
+- Layer 1 Hidden Nodes: 8
 - Layer 1 Activation: RELU
 - Layer 2 Hidden Nodes: 10
 - Layer 2 Activation: RELU
-- Layer 3 Hidden Nodes: 10
-- Layer 3 Activation: TANH
+- Layer 3 Hidden Nodes: 12
+- Layer 3 Activation: RELU
 - Output Layer Activation: SIGMOID
 - Compiling: Loss=binary_crossentropy, optimizer=adam, metrics=accuracy
 - Training: 100 epochs
 
 **Results:**
-**Loss: 0.5516, Accuracy: 0.7249**
+**Loss: 0.4832, Accuracy: 0.7618**
 
 Model Performance:
 
@@ -140,7 +140,7 @@ Model Performance:
 
 **Summary:**
 
-The deep learning model results indicate the necessity for further optimization, as Attempt 1 achieved an accuracy of 72.65%, and Attempt 2 achieved 72.49%, both falling below the minimum acceptable accuracy of 90% or 95% in the context of fundings and financials. Given the sensitivity of model performance to data quality, exploring enhancements in data preprocessing and feature engineering is recommended. To improve model accuracy, adjustments to the neural network architecture, experimentation with activation functions, and an increase in training epochs are also suggested. These findings underscore the iterative nature of model development, prompting a thorough exploration of alternative models and fine-tuning strategies in future iterations to meet the minimum accuracy threshold and better align with Alphabet Soup's objectives.
+The deep learning model results highlight the ongoing need for optimization efforts. **Attempt 1** yielded an accuracy of **72.78%**, and **Attempt 2** showed a notable improvement with an accuracy of **76.18%**, surpassing the targeted **75%**. In **Attempt 2**, the neural network architecture was refined with the inclusion of three hidden layers comprising **8**, **10**, and **12** nodes, respectively, each activated by the **RELU** (Rectified Linear Unit) activation function. This architectural adjustment, coupled with the utilization of the **SIGMOID** activation function in the output layer, contributed to the observed improvement in accuracy. The **SIGMOID** activation function, employed in the output layer, is well-suited for binary classification tasks, providing a probability-like output that aids in distinguishing between classes. The model was trained over **30 epochs**, allowing it to iteratively adjust its weights to better capture the underlying patterns in the training data. As the model's performance is sensitive to data quality, there is a recommendation to further explore enhancements in data preprocessing and feature engineering to potentially boost accuracy. Additionally, extending the training epochs and experimenting with alternative activation functions may further contribute to model refinement. These results emphasize the iterative nature of model development, prompting a comprehensive exploration of alternative models and fine-tuning strategies in future iterations to consistently meet or exceed **Alphabet Soup's accuracy objectives**.
 
   
 **References**
