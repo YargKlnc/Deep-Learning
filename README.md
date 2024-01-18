@@ -1,4 +1,4 @@
-# Deep Learning, Neural Networks
+# Neural Networks & Deep-Learning 
 by YK, UofT
 
 ![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/7da93479-e78b-4f7d-b990-492cebfa6023)
