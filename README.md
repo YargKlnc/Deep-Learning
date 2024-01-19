@@ -43,13 +43,11 @@ A new Google Colab file named AlphabetSoupCharity_Optimization.ipynb was created
 
 *In summary;* the target variable is `IS_SUCCESSFUL`, and the feature variables are the remaining columns in the DataFrame `numeric_application_df`. The code snippet performs the necessary steps to split the data into features (X) and the target (y) arrays, followed by splitting them into training and testing datasets for model training and evaluation.
 
-*Variables Removed in Attempt 1:* In the preprocessing stage of **Attempt 1**, the EIN (Employer Identification Number) and NAME columns were eliminated from the dataset. The exclusion of these variables indicates that they were not considered relevant or contributory to the model's predictive performance for the specific task at hand. The decision to remove variables is often made based on factors such as redundancy, lack of information, or other considerations that might impact the model negatively.
-
-*Variables Removed in Attempt 1:* In the preprocessing stage of **Attempt 2**, the EIN (Employer Identification Number) column was dropped from the dataset. The decision to exclude this variable suggests that it was deemed non-essential or non-contributory to the model's predictive performance for the specific task at hand. Removal of variables is typically based on factors such as redundancy, lack of information, or other considerations that might adversely affect the model. This strategic pruning aims to streamline the dataset and enhance the model's ability to discern meaningful patterns during training.
-
 *Compiling, Training, and Evaluating the Model:*
 
 **Architecture and Training Details (Attempt 1):**
+
+*Variables Removed in Attempt 1:* In the preprocessing stage of **Attempt 1**, the EIN (Employer Identification Number) and NAME columns were eliminated from the dataset. The exclusion of these variables indicates that they were not considered relevant or contributory to the model's predictive performance for the specific task at hand. The decision to remove variables is often made based on factors such as redundancy, lack of information, or other considerations that might impact the model negatively.
 
 Cutoff Value Application: 500
 CutOff Value Classification: 300
@@ -60,17 +58,17 @@ Layer 2 Activation: RELU
 Output Layer Activation: SIGMOID
 Compiling: Loss=binary_crossentropy, optimizer=adam, metrics=accuracy
 Training: The model was trained for 50 epochs, indicating that it went through 50 cycles of adjusting its weights based on the training data to improve its predictive performance.
-
+**Results Attempt 1:**
+**Loss: 0.5524, Accuracy: 0.7278**
 ![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/2f78e526-88ff-4304-a223-1d4c67532e33)
-
 ![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/69c305cb-5d87-4dcd-a670-e270b27c76d3)
 
 These details provide insight into the architecture and training parameters used in Attempt 1, offering a glimpse into how the model was structured and trained for the specified binary classification task.
 
-**Results Attempt 1:**
-**Loss: 0.5524, Accuracy: 0.7278**
 
 **Architecture and Training Details (Attempt 2):**
+
+*Variables Removed in Attempt 1:* In the preprocessing stage of **Attempt 2**, the EIN (Employer Identification Number) column was dropped from the dataset. The decision to exclude this variable suggests that it was deemed non-essential or non-contributory to the model's predictive performance for the specific task at hand. Removal of variables is typically based on factors such as redundancy, lack of information, or other considerations that might adversely affect the model. This strategic pruning aims to streamline the dataset and enhance the model's ability to discern meaningful patterns during training.
 
 Cutoff Value Application: 50
 CutOff Value Classification: 120
@@ -83,13 +81,11 @@ Layer 3 Activation: RELU
 Output Layer Activation: SIGMOID
 Compiling: Loss=binary_crossentropy, optimizer=adam, metrics=accuracy
 Training: The model underwent training for 100 epochs, indicating that it iteratively adjusted its weights over 100 cycles based on the training data to enhance its predictive performance.
-
-![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/71ad8a64-7630-44d6-9a67-601be127a4d4)
-
-![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/22af7068-2b68-4f93-9dc6-94921b40d41d)
-
 **Results Attempt 2:**
 **Loss: 0.4832, Accuracy: 0.7618**
+![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/71ad8a64-7630-44d6-9a67-601be127a4d4)
+![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/22af7068-2b68-4f93-9dc6-94921b40d41d)
+
 
 
 **Summary:**
