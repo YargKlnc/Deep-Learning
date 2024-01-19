@@ -13,21 +13,17 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 
 **Instructions**
 
-
 **Step 1: Preprocessing the Data**
 
 Starter file was uploaded to Google Colab. Using the information provided in the Challenge files, preprocessing steps were completed. Pandas DataFrame was created by reading in the charity_data.csv file. The target variable(s) and feature variable(s) were identified. EIN and NAME columns were dropped. Number of unique values for each column was determined. For columns with more than 10 unique values, the number of data points for each unique value was determined. "Rare" categorical variables were binned together into a new value, Other, using pd.get_dummies() to encode categorical variables. The preprocessed data was split into a features array, X, and a target array, y, using train_test_split. Training and testing features datasets were scaled using StandardScaler.
-
 
 **Step 2: Compile, Train, and Evaluating the Model**
 
 Preprocessing steps were completed in the Google Colab file. A neural network model was created using TensorFlow and Keras, specifying the number of input features and nodes for each layer. The first hidden layer with an appropriate activation function was created. If necessary, a second hidden layer with an appropriate activation function was added. An output layer with an appropriate activation function was created. The structure of the model was checked. The model was compiled and trained. A callback was created to save the model's weights every five epochs. The model was evaluated using the test data to determine the loss and accuracy. Results were saved and exported to an HDF5 file named AlphabetSoupCharity.h5.
 
-
 **Step 3: Optimizing the Model**
 
 A new Google Colab file named AlphabetSoupCharity_Optimization.ipynb was created. Dependencies were imported, and charity_data.csv was read into a Pandas DataFrame. The dataset was preprocessed, considering modifications made during model optimization. A neural network model was designed, adjusting for modifications to achieve a target predictive accuracy higher than 75%. Results were saved and exported to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
-
 
 **Step 4: Reporting on the Neural Network Model**
 
@@ -58,8 +54,10 @@ Layer 2 Activation: RELU
 Output Layer Activation: SIGMOID
 Compiling: Loss=binary_crossentropy, optimizer=adam, metrics=accuracy
 Training: The model was trained for 50 epochs, indicating that it went through 50 cycles of adjusting its weights based on the training data to improve its predictive performance.
+
 **Results Attempt 1:**
 **Loss: 0.5524, Accuracy: 0.7278**
+
 ![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/2f78e526-88ff-4304-a223-1d4c67532e33)
 ![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/69c305cb-5d87-4dcd-a670-e270b27c76d3)
 
@@ -81,8 +79,10 @@ Layer 3 Activation: RELU
 Output Layer Activation: SIGMOID
 Compiling: Loss=binary_crossentropy, optimizer=adam, metrics=accuracy
 Training: The model underwent training for 100 epochs, indicating that it iteratively adjusted its weights over 100 cycles based on the training data to enhance its predictive performance.
+
 **Results Attempt 2:**
 **Loss: 0.4832, Accuracy: 0.7618**
+
 ![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/71ad8a64-7630-44d6-9a67-601be127a4d4)
 ![image](https://github.com/YargKlnc/Deep-Learning/assets/142269763/22af7068-2b68-4f93-9dc6-94921b40d41d)
 
