@@ -95,6 +95,8 @@ The deep learning model results highlight the ongoing need for optimization effo
  
 **References**
 
+Dataset: IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/
+
 Head photo rights: Shutterstock
 
 
